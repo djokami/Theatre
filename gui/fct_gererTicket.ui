@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fct_gererTicket</class>
+ <widget class="QDialog" name="fct_gererTicket">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>572</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion achat tickets</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_gererTicket_enonce">
+     <property name="text">
+      <string>Vous pouvez gérer les tickets depuis ce menu.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Spectacle:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_gererTicket_spectacle"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Représentation: </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_gererTicket_representation"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>No° rang:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_gererTicket_rang"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>No° place:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_gererTicket_place"/>
+     </item>
+    </layout>
+   </item>
+   <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+    <widget class="QPushButton" name="button_gererTicket">
+     <property name="styleSheet">
+      <string notr="true">background-color : lineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))</string>
+     </property>
+     <property name="text">
+      <string>Ajouter Place</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Le panier</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_prixTotal">
+       <property name="text">
+        <string>Prix total:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="table_fct_gererTicket">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="autoScroll">
+      <bool>true</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>80</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>80</number>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>nomSpec</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>dateRep</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>noRang</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>noPlace</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Prix</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Annuler achat</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Valider achat</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_gererTicket_res">
+     <property name="styleSheet">
+      <string notr="true">color:rgb(245, 121, 0)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>comboBox_gererTicket_spectacle</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>fct_gererTicket</receiver>
+   <slot>genererRepresentation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_gererTicket_representation</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>fct_gererTicket</receiver>
+   <slot>genererNumRang()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>339</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_gererTicket_rang</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>fct_gererTicket</receiver>
+   <slot>genererNumPlace()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>161</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_gererTicket</sender>
+   <signal>clicked()</signal>
+   <receiver>fct_gererTicket</receiver>
+   <slot>ajouterPlace()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>310</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>fct_gererTicket</receiver>
+   <slot>annulerPanier()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>554</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>107</x>
+     <y>575</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fct_gererTicket</receiver>
+   <slot>validerPanier()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>567</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>575</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>AjouterRepresentation()</slot>
+  <slot>SupprimerRepresentation()</slot>
+  <slot>genererRepresentation()</slot>
+  <slot>genererNumRang()</slot>
+  <slot>genererNumPlace()</slot>
+  <slot>ajouterPlace()</slot>
+  <slot>annulerPanier()</slot>
+  <slot>validerPanier()</slot>
+ </slots>
+</ui>

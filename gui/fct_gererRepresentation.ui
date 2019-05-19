@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fct_gererRepresentation</class>
+ <widget class="QDialog" name="fct_gererRepresentation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>561</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion représentation</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_fctRepresentation_enonce">
+     <property name="text">
+      <string>Vous pouvez ajouter/supprimer/modifier des représentations pour le spectacle sélectionné.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Spectacle:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_gererRepresentation"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Représentation à ajouter:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="dateTimeEdit_gererRepresentation"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_ajouterRepresentaion">
+       <property name="text">
+        <string>Ajouter</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Représentation à supprimer: </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_2_gererRepresentation"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_supprimerRepresentaion">
+       <property name="text">
+        <string>Supprimer</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Modification: </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_gererRepresentation_modification">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="dateTimeEdit_gererRepresentation_modification"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_modifierRepresentation">
+       <property name="text">
+        <string>Modifier</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="table_fct_gererRepresentation">
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>150</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>50</number>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>dateRep</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>nomSpec</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_gererRepresentation_ticket">
+     <property name="styleSheet">
+      <string notr="true">color:rgb(245, 121, 0)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_gererRepresentation_res">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_ajouterRepresentaion</sender>
+   <signal>clicked()</signal>
+   <receiver>fct_gererRepresentation</receiver>
+   <slot>AjouterRepresentation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_supprimerRepresentaion</sender>
+   <signal>clicked()</signal>
+   <receiver>fct_gererRepresentation</receiver>
+   <slot>SupprimerRepresentation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>407</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>226</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_gererRepresentation</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>fct_gererRepresentation</receiver>
+   <slot>refreshResult()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>473</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>-6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_2_gererRepresentation</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>fct_gererRepresentation</receiver>
+   <slot>NombreTicketSupprimer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>247</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>129</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_gererRepresentation_modification</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>fct_gererRepresentation</receiver>
+   <slot>NombreTicketModifier()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>135</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_modifierRepresentation</sender>
+   <signal>clicked()</signal>
+   <receiver>fct_gererRepresentation</receiver>
+   <slot>ModifierRepresentation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>534</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>AjouterRepresentation()</slot>
+  <slot>SupprimerRepresentation()</slot>
+  <slot>refreshResult()</slot>
+  <slot>NombreTicketSupprimer()</slot>
+  <slot>ModifierRepresentation()</slot>
+  <slot>NombreTicketModifier()</slot>
+ </slots>
+</ui>
